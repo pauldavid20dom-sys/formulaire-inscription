@@ -1,0 +1,166 @@
+
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonte/Cabin/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonte/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonte/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('fonte/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Cabin', sans-serif;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Titre principal */
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Sous-titre / Infos */
+.agence-info {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Cadre global du formulaire */
+.form-box {
+    width: 100%;
+    border: 1px solid #111111;
+    background-color: #ffffff;
+}
+
+/* Lignes de saisie individuelles */
+.input-row {
+    border-bottom: 1px solid #111111;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+}
+
+.input-row label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.input-row label i {
+    margin-right: 6px;
+    color: #111111;
+}
+
+.input-row input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    color: #111;
+    width: 100%;
+}
+
+.input-row input::placeholder {
+    color: #bbb;
+}
+
+/* Bas du formulaire */
+.form-footer-row {
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #111;
+    transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.submit-btn i {
+    margin-right: 6px;
+}
+
+/* Séparateur et Google Box */
+.divider {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.google-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

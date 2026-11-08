@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Script Google Connexion -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <h1>Inscription</h1>
+        
+        <div class="agence-info">
+            ESPACE MEMBRE SÉCURISÉ<br>
+            PENSEZ À BIEN LIRE LES INFORMATIONS AFIN DE LES REMPLIR CORRECTEMENT.
+        </div>
+
+        <form action="traitement.php" method="POST" class="form-box">
+            
+            <div class="input-row">
+                <label for="nom"><i class="fa-solid fa-user"></i> Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="input-row">
+                <label for="prenom"><i class="fa-solid fa-user-tag"></i> Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </div>
+
+            <div class="input-row">
+                <label for="date"><i class="fa-solid fa-calendar-days"></i> Date de naissance</label>
+                <input type="date" id="date" name="date_naissance" required>
+            </div>
+
+            <div class="input-row">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            </div>
+
+            <div class="input-row">
+                <label for="password"><i class="fa-solid fa-lock"></i> Mot de passe</label>
+                <input type="password" id="password" name="mot_de_passe" placeholder="Minimum 8 caractères" minlength="8" required>
+            </div>
+
+            <div class="form-footer-row">
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-check"></i> S'inscrire
+                </button>
+            </div>
+        </form>
+
+        <br>
+        <div class="divider">OU</div>
+        <br>
+
+        <div class="google-box">
+            <div id="g_id_onload"
+                 data-client_id="TON_ID_CLIENT_GOOGLE.apps.googleusercontent.com"
+                 data-auto_prompt="false">
+            </div>
+            
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="sign_in_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
